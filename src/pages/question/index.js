@@ -9,7 +9,7 @@ import './index.css'
 @observer
 class Index extends Component {
   config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: '常见问题'
     // addGlobalClass: true
   }
 
@@ -54,7 +54,7 @@ class Index extends Component {
         <Button onClick={this.incrementAsync}>Add Async</Button>
         <Text>{counterStore.counter}</Text>
         <AtButton type="primary">按钮文案</AtButton>
-        <LayoutTabBar active="index" />
+        <LayoutTabBar active="question" />
       </View>
     )
   }

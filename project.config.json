@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "salebuy",
   "description": "salebuy weixin mini program",
-  "appid": "touristappid",
+  "appid": "wx6cd23cc88625194a",
   "setting": {
     "urlCheck": true,
     "es6": false,

@@ -12,23 +12,14 @@ const config = {
   plugins: {
     babel: {
       sourceMap: true,
-      presets: [
-        'env'
-      ],
-      plugins: [
-        'transform-decorators-legacy',
-        'transform-class-properties',
-        'transform-object-rest-spread'
-      ]
+      presets: ['env'],
+      plugins: ['transform-decorators-legacy', 'transform-class-properties', 'transform-object-rest-spread']
     }
   },
-  defineConstants: {
-  },
+  defineConstants: {},
   copy: {
-     patterns: [
-    ],
-    options: {
-    }
+    patterns: [],
+    options: {}
   },
   weapp: {
     module: {
@@ -58,7 +49,7 @@ const config = {
   }
 }
 
-module.exports = function (merge) {
+module.exports = function(merge) {
   if (process.env.NODE_ENV === 'development') {
     return merge({}, config, require('./dev'))
   }

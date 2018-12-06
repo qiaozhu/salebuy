@@ -3,9 +3,9 @@ import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
 
 import counterStore from './store/counter'
-
-import './app.css'
-
+import './assets/iconfont/iconfont.css'
+import './app.scss'
+import './assets/css/reset.scss'
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
 // if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
@@ -18,7 +18,7 @@ const store = {
 
 class App extends Component {
   config = {
-    pages: ['pages/index/index'],
+    pages: ['pages/index/index', 'pages/hot/index', 'pages/question/index', 'pages/me/index'],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
